@@ -22,13 +22,15 @@
 \usepackage{blindtext}      % Blindtext zum Testen von Textausgaben
 \usepackage{graphicx}
 %\usepackage{picinpar}
+%\usepackage{booktabs}
+\usepackage{tabularx}
 
 \title{LastShelter: Survival}
 \subtitle{Farming Guide}
 \author{\textcopyleft{} anmiwa (Reich449)%
   \thanks{Mit den besten Empfehlungen,
     Wikimedia Foundation Inc.,
-    Telefon: +1-415-839-6885}}
+    Telefon: +49-0815-4711}}
 
 \date{\today}               % \today setzt das heutige Datum
 
@@ -65,38 +67,75 @@ Da man viel Zeit bräuchte wenn man jede Farm täglich bewirtschaften müsste, i
 
 \section{Farm anlegen}
 Eine Farm wird angelegt indem man ein neues Spiel startet. Dies kannst du unter Einstellungen/Konto machen.
-Jetzt musst du die Einführung ganz normal durchspielen. Bis einschließlich Level 5 hast du einen Schutzschirm, also gehe nicht auf Level 6 bevor du nicht in unserer Allianz bist und wir dich in unseren Hive transportiert haben.
+Jetzt musst du die Einführung ganz normal durchspielen. Bis einschließlich Level 5 hast du einen Schutzschirm,
+also gehe nicht auf Level 6 bevor du nicht in unserer Allianz bist und wir dich in unseren Hive transportiert haben.
 
-Deine Farm ist in einem zufälligen Reich (Staat). Du musst also in unseren umziehen. Dazu gehst du auf die Weltkarte. Unten in der Mitte findest du ein Feld mit den aktuellen Koordinaten. Da klickst du drauf. Jetzt öffnet sich ein 
+Deine Farm ist in einem zufälligen Reich (Staat). Du musst also in unseren umziehen. Dazu gehst du auf die Weltkarte.
+Unten in der Mitte findest du ein Feld mit den aktuellen Koordinaten. Da klickst du drauf. Jetzt öffnet sich ein 
 Fenster (Koordinaten eingeben) in dem du das Reich 449 eintragen musst. X und Y sind erst mal egal.
-Wenn du dann im Staat \#449 bist, klickst du in einem freien Bereich, um die Optionen zu sehen. Normalerweise kommt Rechts ein Button „Staat wechseln“, den wählst du an und bestätigst.
+Wenn du dann im Staat \#449 bist, klickst du in einem freien Bereich, um die Optionen zu sehen. Normalerweise kommt Rechts ein
+Button „Staat wechseln“, den wählst du an und bestätigst.
 Jetzt sollte deine Basis irgendwo in unserem Staat sein. Damit kannst du dich jetzt für unsere Farm Allianz bewerben.
 Du hast auch nur 14 Tage Zeit um den Staat zu wechseln.
-Du kannst nach unser Allianz suchen oder auf eine Basis der Allianz klicken [(PaT) daWahnsinn (X:951, Y:411)] oder mich per PM anschreiben, damit wir dich einladen können.
-Wichtig! Der Allianz Teleport funktioniert nur einmal! Danach kostet er 2000 Diamanten! Also am besten gar nicht erst in eine andere Allianz eintreten.
+Du kannst nach unser Allianz suchen oder auf eine Basis der Allianz klicken [(PaT) daWahnsinn (X:951, Y:411)] oder mich per PM anschreiben,
+damit wir dich einladen können.
+Wichtig! Der Allianz Teleport funktioniert nur einmal! Danach kostet er 2000 Diamanten! Also am besten gar nicht erst in eine
+andere Allianz eintreten.
 
 
 
-\subsection[Die Subsection als Unterabschnitt]{Erster Unterabschnitt}
-Unterabschnitte dienen zur weiteren Untergliederung von Abschnitten in einzelne, logische Einheiten. Sie können aber auch als erklärender Text oder weiter hergeholte Einschübe dienen.
 
-%\begin{figure}[htbp] 
-\begin{figure}
+\begin{figure}[htbp] 
+%begin{figure}
   \centering
-%     \includegraphics[width=0.7\textwidth]{TUX.png}
-     \includegraphics{TUX.png}
+     \includegraphics[width=0.7\textwidth]{map.pdf}
+%     \includegraphics{IMG_E0004.JPG}
   \caption{Erstes Bild}
   \label{fig:Bild1}
 \end{figure}
-
-\subsubsection[Die Subsubsection mit Label]{Label als Bezugspunkte im Text}
-Ein demonstrativer Unter-Unterabschnitt \label{Unter-Unterabschnitt}.
-Im Folgenden wird auf diese Textstelle namens Unter-Unterabschnitt~\ref{Unter-Unterabschnitt} verwiesen, die sich hier auf der Seite~\pageref{Unter-Unterabschnitt} befindet.
 
 \section*{Zweiter Abschnitt, die Sache mit dem „*“}
 Abschnitte werden normalerweise automatisch durchgehend nummeriert, das Setzen eines Sterns -- wie hier in \verb|\section*{}| -- verhindert aber das Auf"|führen der Sektion im Inhaltsverzeichnis und die entsprechende
 Nummerierung. So fällt hier im Beispiel der zweite Abschnitt gänzlich unter den Tisch.
 
+\subsection[Die Subsection als Unterabschnitt]{Erster Unterabschnitt}
+Unterabschnitte dienen zur weiteren Untergliederung von Abschnitten in einzelne, logische Einheiten. Sie können aber auch als
+erklärender Text oder weiter hergeholte Einschübe dienen.
+
+\subsubsection{Empfohlene Gebäude Level}
+%Ein demonstrativer Unter-Unterabschnitt \label{Unter-Unterabschnitt}.
+%Im Folgenden wird auf diese Textstelle namens Unter-Unterabschnitt~\ref{Unter-Unterabschnitt} verwiesen, die sich hier auf der Seite~\pageref{Unter-Unterabschnitt} befindet.
+Nachfolgend eine Liste der benötigten Gebäude und der jeweiligen Level.
+
+\begin{tabularx}{0.9\textwidth}{lccX}
+  Gebäude & Level & Straße & Bemerkung \\
+  \hline
+  Basis & 15 & ja & Nicht höher als 15, da sonst die Punkte für die dritte Kiste bei den Events stak ansteigen. \\
+  Windkraftwerk & 15 & ja & Genügt knapp um die Basis mit Strom zu versorgen. \\
+  Handelszentrum & 15 & ja & Hier wird Wasser und Strom verkauft. \\
+  Militärakademie & 15 & ja & Um die gesammelten Helden in Medallien umzutauschen für die Events. \\
+  Institut & 8 & nein & Wird benötigt um Stadtentwicklung auf MAX zu bringen. \\
+  Farm & 15 & ja & Nahrung zum plündern. \\
+  Sägewerk & 15 & ja & Holz zum plündern. \\
+  Klärwerk & 15 & ja & Wasser zum verkaufen. \\
+  Ölquelle & 15 & ja & Öl zum plündern. \\
+  Eisenmine & 15 & ja & Eisen zum plündern. \\
+  Wohnhaus & 15 & ja & Bevölkerung für die Bank-Effizienz. \\
+  Bank & 15 & ja & Geld zum plündern. \\
+  Lager & 15 & ja & Alle Lager I auf Level 10, damit man Lager II bekommt. \\
+  Lager II & 3 & ja & Die Kosten für höhere Level lohnen sich meist nicht. Wenn man regelmäßig seine Farm plündert, sollten 6M Lagerkapazität genügen. \\
+  Schützencamp & 13 & nein & Wird benötigt um Basis auf Level 14 upgraden zu können. \\
+  Unterschlupf & 8 & nein & ???Wird benötigt um Basis auf Level 9 upgraden zu können. \\
+  Lazarett & 9 & nein & ???Wird benötigt um Basis auf Level 10 upgraden zu können. \\
+  Produktion Ztr. & 15 & ja & Wenn man Bauer ist, kann hier täglich viele Resourcen bekommen. Allerdings müßte man sich dazu täglich einloggen.\\
+  Kantine & 14 & nein & Wird benötigt um Basis auf Level 15 upgraden zu können. \\
+  Held Saal & 15 & nein & Wird benötigt um Militärakademie auf Level 15 upgraden zu können. \\
+  Öl-Kraftwerk & 9 & nein & Wird benötigt um Stromspeicher auf Level 10 upgraden zu können. \\
+  Verteidigungzentrum & x & nein & Hier sollte man ein Level wählen, um mit dem APC des Main 3 mal plündern zu können. \\
+  Restliche Gebäude & 1 & nein & Wird nicht benötigt und verbraucht sonst Resourcen. \\
+\end{tabularx}
+
+  
 %\piccaption{Bildunterschrift} 
 %\parpic[r]{\includegraphics [width=3cm,height=3cm]{TUX.png}}
 
@@ -114,8 +153,7 @@ Wie zu sehen, kann ein Absatz auch mehrere Text-Absätze enthalten. Überflüssi
 
 Diese Schachtelung kann man mit Unter-Paragraphen noch eine Stufe weiter treiben \ldots{}
 %
-Wir begnügen uns aber mit dem Hinweis auf Unter\-%
-Unterabschnitt~\ref{Unter-Unterabschnitt}.
+Wir begnügen uns aber mit dem Hinweis auf Unter\-Unterabschnitt~\ref{Unter-Unterabschnitt}.
 
 \section[Aufzählungen]{Aufzählungen und Nummerierungen}
 Dieser Abschnitt wird im folgenden beschrieben und kann dann 
