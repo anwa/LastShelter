@@ -1,5 +1,5 @@
 %\date{\copyright\today}
-\documentclass[fontsize=12pt,a4paper,draft]{scrartcl}[2003/01/01]
+\documentclass[fontsize=12pt,a4paper]{scrartcl}[2003/01/01]
 
 % Das Prozent-Zeichen leitet einen Kommentar ein,
 % es hilft ebenso, im Text Leerzeichen zu unterbinden.
@@ -50,20 +50,20 @@ Da man viel Zeit bräuchte wenn man jede Farm täglich bewirtschaften müsste, i
 
 \begin{table}[h!]
   \centering
+\begin{tabularx}{0.6\textwidth}{rl}
+  Ressource & Tagesproduktion \\
+  \hline
+  Nahrung & 1.617 k \\
+  Wasser & 1.944 k \\
+  Öl & 1.422 k \\
+  Strom & 213 k \\
+  Holz & 1.092 k \\
+  Eisen & 657 k \\
+  Geld & 705 k \\
+\end{tabularx}
     \caption[Ertrag]{Täglicher Ertrag einer fertigen Farm}
-    \begin{tabular}{rl}
-%      \hline
-      Nahrung & 1.617 k \\
-      Wasser & 1.944 k \\
-      Öl & 1.422 k \\
-      Strom & 213 k \\
-      Holz & 1.092 k \\
-      Eisen & 657 k \\
-      Geld & 705 k \\
-%\hline\hline
-%      \hline
-    \end{tabular}
 \end{table}
+
 
 \section{Farm anlegen}
 Eine Farm wird angelegt indem man ein neues Spiel startet. Dies kannst du unter Einstellungen/Konto machen.
@@ -83,20 +83,38 @@ Wichtig! Der Allianz Teleport funktioniert nur einmal! Danach kostet er 2000 Dia
 andere Allianz eintreten.
 
 
-
-
 \begin{figure}[htbp] 
-%begin{figure}
   \centering
-     \includegraphics[width=0.7\textwidth]{map.pdf}
-%     \includegraphics{IMG_E0004.JPG}
-  \caption{Erstes Bild}
-  \label{fig:Bild1}
+     \includegraphics[width=0.8\textwidth]{Bilder/map.png}
+  \caption{Basis Layout}
+  \label{fig:map}
 \end{figure}
 
 \section*{Zweiter Abschnitt, die Sache mit dem „*“}
 Abschnitte werden normalerweise automatisch durchgehend nummeriert, das Setzen eines Sterns -- wie hier in \verb|\section*{}| -- verhindert aber das Auf"|führen der Sektion im Inhaltsverzeichnis und die entsprechende
 Nummerierung. So fällt hier im Beispiel der zweite Abschnitt gänzlich unter den Tisch.
+
+\begin{figure}[htbp] 
+  \centering
+     \includegraphics[width=5cm]{Bilder/IMG_E0002.JPG}
+  \caption{Aufgaben}
+  \label{fig:aufgaben}
+\end{figure}
+
+
+\begin{figure}[htbp] 
+  \centering
+     \includegraphics[width=3cm]{Bilder/IMG_E0005.JPG}
+  \caption{Zone ändern}
+  \label{fig:zone}
+\end{figure}
+
+\begin{figure}[htbp] 
+  \centering
+     \includegraphics[width=4cm]{Bilder/IMG_E0004.JPG}
+  \caption{Koordinaten Eingabe}
+  \label{fig:koordinaten}
+\end{figure}
 
 \subsection[Die Subsection als Unterabschnitt]{Erster Unterabschnitt}
 Unterabschnitte dienen zur weiteren Untergliederung von Abschnitten in einzelne, logische Einheiten. Sie können aber auch als
