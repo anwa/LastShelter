@@ -23,6 +23,7 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{tabularx}
+\usepackage[german]{datetime2}
 
 % Git Info
 %\usepackage[local,missing={(Oh my!)},dirty={Oh no!},markifdirty,marknotags]{gitinfo2}
@@ -32,8 +33,7 @@
 \subtitle{Farming Guide}
 \author{\textcopyleft{} anmiwa (Reich449)%
   \thanks{Mit den besten Empfehlungen, PAt Pain Attac}}
-
-\date{\today}               % \today setzt das heutige Datum
+\date{\DTMfetchday{gitdate}. \DTMgermanmonthname{\DTMfetchmonth{gitdate}} \DTMfetchyear{gitdate}}
 
 \usepackage[%
 	bookmarksnumbered,
